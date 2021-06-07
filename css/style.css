@@ -6,8 +6,8 @@ html {
 }
 
 body {
-	max-width: 1730px;
-	margin: 0 auto;
+	/* max-width: 1730px; */
+	margin: 0;
 	padding: 0;
 	font-family: "Forum", "Times New Roman", serif;
 	font-style: normal;
@@ -58,6 +58,7 @@ section {
 /* --------
 Шапка сайта 
 ---------*/
+/*
 .main-header {
 	display: flex;
 	justify-content: space-between;
@@ -122,9 +123,9 @@ section {
 
 /* ------
 Промоблок
--------*/
+-------*
 .promo {
-	/* min-height: 1000px; */
+	/* min-height: 1000px; *
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -206,9 +207,9 @@ section {
 
 /* ------------
   Каталог услуг
--------------*/
+-------------*
 .services {
-	/* min-height: 1400px; */
+	/* min-height: 1400px; *
 	max-width: 1730px;
 	margin: 0 auto;
 	padding: 66px 0;
@@ -336,9 +337,9 @@ section {
 
 /* --------
 Предложения
----------*/
+---------*
 .offer {
-	/* min-height: 700px; */
+	/* min-height: 700px; *
 	display: flex;
 	max-width: 1176px;
 	margin: 0 auto;
@@ -420,9 +421,9 @@ section {
 
 /* -------
 Композиции
---------*/
+--------*
 .compositions {
-	/* min-height: 1100px; */
+	/* min-height: 1100px; *
 	display: flex;
 	flex-direction: row-reverse;
 	max-width: 1730px;
@@ -531,9 +532,9 @@ section {
 
 /* -------------
 Подарочные карты
---------------*/
+--------------*
 .gift-cards {
-	/* min-height: 1100px; */
+	/* min-height: 1100px; *
 	max-width: 1176px;
 	margin: 0 auto;
 	padding: 128px 0 163px;
@@ -661,9 +662,9 @@ section {
 
 /* ------
  Партнёры
--------*/
+-------*
 .partners {
-	/* min-height: 900px; */
+	/* min-height: 900px; *
 	max-width: 1176px;
 	margin: 0 auto;
 	padding: 108px 0 166px;
@@ -703,7 +704,7 @@ section {
 }
 /* ----------
 Главный футер
------------*/
+-----------*
 .main-footer {
 	min-height: 160px;
 	padding-top: 21px;
