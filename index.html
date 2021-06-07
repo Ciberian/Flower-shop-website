@@ -7,33 +7,38 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="css/normalize.css" />
-		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<!-- <link rel="stylesheet" href="css/style.css" /> -->
 		<title>Магазин цветов "Весна всегда"</title>
 	</head>
 	<body>
 		<!-- Шапка сайта -->
 		<header class="main-header">
-			<a href="" class="main-header__logo font-for-link">Весна всегда</a>
-			<nav class="main-navigation">
-				<ul class="main-navigation__list">
-					<li class="main-navigaiton__item">
-						<a href="#services" class="main-navigation__link font-for-link">Услуги</a>
-					</li>
-					<li class="main-navigaiton__item">
-						<a href="#offer" class="main-navigation__link font-for-link">Акции</a>
-					</li>
-					<li class="main-navigaiton__item">
-						<a href="#compositions" class="main-navigation__link font-for-link">Композиции</a>
-					</li>
-					<li class="main-navigaiton__item">
-						<a href="#gift-cards" class="main-navigation__link font-for-link">Подарочные карты</a>
-					</li>
-					<li class="main-navigaiton__item">
-						<a href="#partners" class="main-navigation__link font-for-link">Наши партнеры</a>
-					</li>
-				</ul>
-			</nav>
-			<a class="main-header__phone-number font-for-link" href="tel:+79163921777" aria-label="Номер телефона">+7 (916) 392 17 77</a>
+			<div class="container">
+				<div class="row">
+					<a href="" class="main-header__logo font-for-link col-3">Весна всегда</a>
+					<nav class="main-navigation col-6">
+						<ul class="main-navigation__list">
+							<li class="main-navigaiton__item">
+								<a href="#services" class="main-navigation__link font-for-link">Услуги</a>
+							</li>
+							<li class="main-navigaiton__item">
+								<a href="#offer" class="main-navigation__link font-for-link">Акции</a>
+							</li>
+							<li class="main-navigaiton__item">
+								<a href="#compositions" class="main-navigation__link font-for-link">Композиции</a>
+							</li>
+							<li class="main-navigaiton__item">
+								<a href="#gift-cards" class="main-navigation__link font-for-link">Подарочные карты</a>
+							</li>
+							<li class="main-navigaiton__item">
+								<a href="#partners" class="main-navigation__link font-for-link">Наши партнеры</a>
+							</li>
+						</ul>
+					</nav>
+					<a class="main-header__phone-number font-for-link col-3" href="tel:+79163921777" aria-label="Номер телефона">+7 (916) 392 17 77</a>
+				</div>
+			</div>
 		</header>
 		<main>
 			<h1 class="visually-hidden">Mагазин цветов "Весна всегда"</h1>
@@ -314,6 +319,7 @@
 				</li>
 			</ul>
 		</footer>
-		<script src="script.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
