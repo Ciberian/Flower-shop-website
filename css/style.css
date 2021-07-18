@@ -97,50 +97,12 @@ section {
 	opacity: 0.6;
 	outline: none;
 }
-/*
-.main-navigation__list {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 -60px 0 0;
-	padding: 0;
-	list-style: none;
-}
-
-.main-navigation__link {
-	display: inline-block;
-	margin-right: 60px;
-	margin-bottom: 11px;
-}
-
-.main-header__phone-number {
-	margin-left: 60px;
-}
-
-.font-for-link {
-	padding-bottom: 3px;
-	font: inherit;
-	font-size: 20px;
-	line-height: 22px;
-	letter-spacing: 0.06em;
-	color: #ffffff;
-	text-transform: uppercase;
-	white-space: nowrap;
-	border-bottom: 2px solid rgba(255, 255, 255, 0);
-	transition: 0.2s linear all;
-}
-
-.font-for-link:hover,
-.font-for-link:focus {
-	border-color: rgba(255, 255, 255, 0.5);
-	opacity: 0.6;
-	outline: none;
-}
 
 /* ------
 Промоблок
--------*
+-------*/
 .promo {
-	/* min-height: 1000px; *
+	min-height: 1000px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -148,7 +110,7 @@ section {
 	margin: 0 auto;
 	padding: 172px 0 220px 0;
 }
-
+/*
 .promo__title {
 	max-width: 940px;
 	margin: 0 auto;
