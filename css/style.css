@@ -17,7 +17,7 @@ body {
 	background-color: #3b181e;
 	background-image: url(../img/promo-bg.jpg);
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: 100% auto;
 }
 
 img, 
@@ -58,31 +58,46 @@ section {
 /* --------
 Шапка сайта 
 ---------*/
-/*
+
 .main-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	max-width: 1730px;
-	margin: 0 auto;
 	padding-top: 113px;
+	min-width: 420px;
 }
 
 .main-header__logo {
 	position: relative;
-	margin-right: 60px;
 }
 
 .main-header__logo::before {
 	content: "";
 	position: absolute;
-	left: 2px;
 	bottom: 27px;
-	width: 134px;
+	width: 137px;
 	height: 23px;
 	background-image: url(../img/logo-decoration.svg);
 }
 
+.link-font {
+	padding-bottom: 3px;
+	font: inherit;
+	font-size: 20px;
+	line-height: 22px;
+	letter-spacing: 0.06em;
+	color: rgba(255, 255, 255, 0.55);
+	text-transform: uppercase;
+	white-space: nowrap;
+	border-bottom: 2px solid rgba(255, 255, 255, 0);
+	transition: 0.2s linear all;
+}
+
+.link-font:hover,
+.link-font:focus {
+	color: #ffffff;
+	border-color: rgba(255, 255, 255, 0.55);
+	opacity: 0.6;
+	outline: none;
+}
+/*
 .main-navigation__list {
 	display: flex;
 	flex-wrap: wrap;

@@ -14,32 +14,36 @@
 	<body>
 		<!-- Шапка сайта -->
 		<header class="main-header">
-			<div class="container">
-				<div class="row">
-					<a href="" class="main-header__logo font-for-link col-sm-6 col-md-2">Весна всегда</a>
-					<nav class="main-navigation hidden-sm col-md-7">
-						<ul class="main-navigation__list list-inline breadcrumb">
-							<li class="main-navigaiton__item">
-								<a href="#services" class="main-navigation__link font-for-link">Услуги</a>
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<div class="container-fluid">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Переключатель навигации">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<a class="main-header__logo link-font d-flex align-self-end disabled" aria-current="page" href="#">Весна всегда</a>
+					<div class="collapse navbar-collapse" id="navbarToggler">
+						<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a href="#services" class="nav-link link-font">Услуги</a>
 							</li>
-							<li class="main-navigaiton__item">
-								<a href="#offer" class="main-navigation__link font-for-link">Акции</a>
+							<li class="nav-item">
+								<a href="#offer" class="nav-link link-font">Акции</a>
 							</li>
-							<li class="main-navigaiton__item">
-								<a href="#compositions" class="main-navigation__link font-for-link">Композиции</a>
+							<li class="nav-item">
+								<a href="#compositions" class="nav-link link-font">Композиции</a>
 							</li>
-							<li class="main-navigaiton__item">
-								<a href="#gift-cards" class="main-navigation__link font-for-link">Подарочные карты</a>
+							<li class="nav-item">
+								<a href="#gift-cards" class="nav-link link-font">Подарочные карты</a>
 							</li>
-							<li class="main-navigaiton__item">
-								<a href="#partners" class="main-navigation__link font-for-link">Наши партнеры</a>
+							<li class="nav-item">
+								<a href="#partners" class="nav-link link-font">Наши партнеры</a>
 							</li>
 						</ul>
-					</nav>
-					<a class="main-header__phone-number font-for-link col-sm-6 col-md-3 text-sm-end" href="tel:+79163921777" aria-label="Номер телефона">+7 (916) 392 17 77</a>
+					</div>
+					<a class="main-header__phone-number link-font d-flex align-self-end" href="tel:+79163921777" aria-label="Номер телефона">+7 (916) 392 17 77</a>
 				</div>
-			</div>
+			</nav>
 		</header>
+
 		<main>
 			<h1 class="visually-hidden">Mагазин цветов "Весна всегда"</h1>
 			<!-- Промоблок -->
