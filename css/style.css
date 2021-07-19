@@ -20,11 +20,6 @@ body {
 	background-size: 100% auto;
 }
 
-img, 
-svg {
-	display: block;
-}
-
 svg:hover {
 	opacity: 0.6;
 }
@@ -33,27 +28,6 @@ a {
 	text-decoration: none;
 }
 
-section,
-h2 {
-	margin: 0;
-	padding: 0;
-}
-
-section {
-	margin: 0 auto;
-}
-
-/* -------------------
-Вспомогательные классы
---------------------*/
-
-.visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	clip: rect(0 0 0 0);
-}
 
 /* --------
 Шапка сайта 
@@ -83,7 +57,7 @@ section {
 	font-size: 20px;
 	line-height: 22px;
 	letter-spacing: 0.06em;
-	color: rgba(255, 255, 255, 0.55);
+	color: #ffffff !important;
 	text-transform: uppercase;
 	white-space: nowrap;
 	border-bottom: 2px solid rgba(255, 255, 255, 0);
@@ -98,16 +72,18 @@ section {
 	outline: none;
 }
 
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}	
+
+.navbar-toggler {
+	border: 1px solid #ffffff !important;
+}
+
 /* ------
 Промоблок
 -------*/
 .promo {
-	min-height: 1000px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	max-width: 1730px;
-	margin: 0 auto;
 	padding: 172px 0 220px 0;
 }
 
