@@ -204,6 +204,27 @@ a {
 	background-color: #fff;
 }
 
+.services__list {
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-auto-flow: dense;
+}
+
+.small {
+	grid-row: span 5;
+}
+
+.medium {
+	grid-row: span 7;
+}
+
+.large {
+	grid-row: span 9;
+}
+
+.extra-large {
+	grid-row: span 13;
+}
+
 .services__list-item {
 	position: relative;
 	width: 350px;
