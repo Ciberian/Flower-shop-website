@@ -278,13 +278,10 @@ a {
 
 /* --------
 Предложения
----------*
+---------*/
 .offer {
-	/* min-height: 700px; *
-	display: flex;
 	max-width: 1176px;
-	margin: 0 auto;
-	padding: 147px 0 143px;
+	padding: 143px 0;
 }
 /*
 .offer__wrapper {
@@ -293,15 +290,11 @@ a {
 	align-items: flex-start;
 	padding: 0 80px 0 3px;
 }
-
+*/
 .offer__title {
 	margin: 41px 0 25px;
-	font-weight: 400;
-	font-size: 50px;
 	line-height: 55px;
 	letter-spacing: 0.09em;
-	text-transform: uppercase;
-	color: #ffffff;
 }
 
 .offer__title::after {
@@ -318,7 +311,6 @@ a {
 	margin-bottom: 31px;
 	font-size: 18px;
 	line-height: 31px;
-	color: #ffffff;
 }
 
 .offer__link {
@@ -344,9 +336,8 @@ a {
 	outline: rgba(255, 255, 255, 0.8) solid 1px;
 }
 
-.offer__img {
+/* .offer__img {
 	position: relative;
-	margin: 0;
 }
 
 .offer__img::before {
@@ -358,7 +349,7 @@ a {
 	content: "";
 	border: 1px solid rgba(255, 255, 255, 0.2);
 	box-sizing: border-box;
-}
+} */
 
 /* -------
 Композиции
