@@ -54,6 +54,7 @@
 
 		<main>
 			<h1 class="visually-hidden">Mагазин цветов "Весна всегда"</h1>
+
 			<!-- Промоблок -->
 			<section class="promo">
 				<div class="container-fluid d-flex flex-column align-items-center">
@@ -134,6 +135,7 @@
 					</div>
 				</div>
 			</section>
+
 			<!-- Каталог услуг -->
 			<section class="services" id="services">
 				<h2 class="services__title">Каталог услуг</h2>
@@ -188,6 +190,7 @@
 					</div>
 				</div>
 			</section>
+
 			<!-- Предложения -->
 			<section class="offer container-fluid row mx-auto" id="offer">
 				<div class="col-lg-4 ps-4 ps-xl-0">
@@ -199,35 +202,52 @@
 					<img class="img-fluid" src="img/plates.jpg" width="697" height="410" alt="Тарелки и цветы" />
 				</div>
 			</section>
+
 			<!-- Композиции -->
-			<section class="compositions" id="compositions">
-				<div class="compositions__wrapper">
-					<h2 class="compositions__title">Композиции и шляпные коробки</h2>
+			<section class="compositions container-fluid ps-4 row" id="compositions">
+				<div class="col-xl-4 pb-5">
+					<h2 class="compositions__title display-5">Композиции и шляпные коробки</h2>
 					<p class="compositions__description">
 						Композиции могут собираться в любой таре: корзинке, шляпной коробке, вазочке или декоративных ящиках. Их нет необходимости ставить в вазу, как
 						букеты, потому что цветы питаются при помощи специальной флористической губки под названием оазис.<br />
 						Композиции очень удобные для подарка, или оформления мероприятия.
 					</p>
 					<a href="#" class="compositions__link">Заказать</a>
-					<p class="compositions__previews">
-						<button class="compositions__img-preview" type="button">
-							<img src="img/basket-1.jpg" width="123" height="123" alt="Корзина с цветами" />
-						</button>
-						<button class="compositions__img-preview" type="button">
-							<img src="img/basket-2.jpg" width="123" height="123" alt="Корзина с цветами" />
-						</button>
-						<button class="compositions__img-preview" type="button">
-							<img src="img/basket-3.jpg" width="123" height="123" alt="Корзина с цветами" />
-						</button>
-						<button class="compositions__img-preview" type="button">
-							<img src="img/basket-4.jpg" width="123" height="123" alt="Корзина с цветами" />
-						</button>
-					</p>
 				</div>
-				<p class="compositions__img-big">
-					<img class="img-big" src="img/basket-1.jpg" width="1000" height="855" alt="Корзина с цветами" />
-				</p>
+				<div class="col-xl-8">
+					<div id="carIndicators" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#carIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							<button type="button" data-bs-target="#carIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active" data-bs-interval="8000">
+								<img src="img/basket-1.jpg" class="d-block w-100" alt="Корзина с цветами" />
+							</div>
+							<div class="carousel-item" data-bs-interval="8000">
+								<img src="img/basket-2.jpg" class="d-block w-100" alt="Корзина с цветами" />
+							</div>
+							<div class="carousel-item" data-bs-interval="8000">
+								<img src="img/basket-3.jpg" class="d-block w-100" alt="Корзина с цветами" />
+							</div>
+							<div class="carousel-item" data-bs-interval="8000">
+								<img src="img/basket-4.jpg" class="d-block w-100" alt="Корзина с цветами" />
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carIndicators" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Предыдущий</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carIndicators" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Следующий</span>
+						</button>
+					</div>
+				</div>
 			</section>
+
 			<!-- Подарочные карты -->
 			<section class="gift-cards" id="gift-cards">
 				<h2 class="gift-cards__title">Подарочные карты</h2>
