@@ -389,11 +389,9 @@ a {
 
 /* -------------
 Подарочные карты
---------------*
+--------------*/
 .gift-cards {
-	/* min-height: 1100px; *
 	max-width: 1176px;
-	margin: 0 auto;
 	padding: 128px 0 163px;
 }
 
@@ -403,8 +401,6 @@ a {
 	font-size: 30px;
 	line-height: 33px;
 	letter-spacing: 0.06em;
-	text-transform: uppercase;
-	text-align: center;
 	color: #ffffff;
 }
 
@@ -418,25 +414,8 @@ a {
 	background-color: #fff;
 }
 
-.gift-cards__list {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-.card {
-	display: flex;
-	flex-direction: column;
-}
 
 .card__top {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	width: 348px;
 	height: 219px;
 	padding: 10px;
@@ -446,7 +425,6 @@ a {
 	background-position: center;
 	background-size: 95% 90%;
 	border-radius: 8px;
-	box-sizing: border-box;
 	z-index: 1;
 }
 
@@ -457,22 +435,9 @@ a {
 	border-radius: 10px;
 }
 
-.card__number {
-	text-align: right;
-}
 
-.card__number,
-.card__price {
-	font-size: 20px;
-	line-height: 22px;
-	letter-spacing: 0.06em;
-}
 
 .card__bottom {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
 	width: 348px;
 	height: 365px;
 	margin-top: -10px;
@@ -516,7 +481,7 @@ a {
 .card__link:focus {
 	outline: rgba(255, 255, 255, 0.8) solid 1px;
 }
-
+/*
 /* ------
  Партнёры
 -------*
