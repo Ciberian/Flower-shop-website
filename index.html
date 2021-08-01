@@ -6,254 +6,310 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet" />
-		<link rel="stylesheet" href="css/normalize.css" />
+		<!-- <link rel="stylesheet" href="css/normalize.css" /> -->
+		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<title>Магазин цветов "Весна всегда"</title>
 	</head>
 	<body>
 		<!-- Шапка сайта -->
-		<header class="main-header">
-			<a href="" class="main-header__logo font-for-link">Весна всегда</a>
-			<nav class="main-navigation">
-				<ul class="main-navigation__list">
-					<li class="main-navigaiton__item">
-						<a href="#services" class="main-navigation__link font-for-link">Услуги</a>
-					</li>
-					<li class="main-navigaiton__item">
-						<a href="#offer" class="main-navigation__link font-for-link">Акции</a>
-					</li>
-					<li class="main-navigaiton__item">
-						<a href="#compositions" class="main-navigation__link font-for-link">Композиции</a>
-					</li>
-					<li class="main-navigaiton__item">
-						<a href="#gift-cards" class="main-navigation__link font-for-link">Подарочные карты</a>
-					</li>
-					<li class="main-navigaiton__item">
-						<a href="#partners" class="main-navigation__link font-for-link">Наши партнеры</a>
-					</li>
-				</ul>
+		<header class="main-header mx-auto">
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<div class="container-fluid">
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarToggler"
+						aria-controls="navbarToggler"
+						aria-expanded="false"
+						aria-label="Переключатель навигации"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<a class="main-header__logo link-font d-flex align-self-end disabled" aria-current="page" href="#">Весна всегда</a>
+					<div class="collapse navbar-collapse" id="navbarToggler">
+						<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a href="#services" class="nav-link link-font">Услуги</a>
+							</li>
+							<li class="nav-item">
+								<a href="#offer" class="nav-link link-font">Акции</a>
+							</li>
+							<li class="nav-item">
+								<a href="#compositions" class="nav-link link-font">Композиции</a>
+							</li>
+							<li class="nav-item">
+								<a href="#gift-cards" class="nav-link link-font">Подарочные карты</a>
+							</li>
+							<li class="nav-item">
+								<a href="#partners" class="nav-link link-font">Наши партнеры</a>
+							</li>
+						</ul>
+					</div>
+					<a class="main-header__phone-number link-font d-flex align-self-end" href="tel:+79163921777" aria-label="Номер телефона">+7 (916) 392 17 77</a>
+				</div>
 			</nav>
-			<a class="main-header__phone-number font-for-link" href="tel:+79163921777" aria-label="Номер телефона">+7 (916) 392 17 77</a>
 		</header>
+
 		<main>
 			<h1 class="visually-hidden">Mагазин цветов "Весна всегда"</h1>
+
 			<!-- Промоблок -->
-			<section class="promo">
-				<h2 class="promo__title">Флористика с душой</h2>
-				<a class="promo__link" href="#compositions">Смотреть работы</a>
-				<div class="promo__wrapper">
-					<ul class="social-links">
-						<li class="social-links__item social-links__item--margin-top">
-							<a class="social-links__link" href="http://instagram.com">
-								<span class="visually-hidden">Наш инстаграм</span>
-								<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<rect x="0.5" y="0.5" width="24" height="24" rx="3.5" stroke="white" />
-									<circle cx="12.5" cy="12.5" r="5" stroke="white" />
-									<circle cx="19.5" cy="5.5" r="1.5" fill="white" />
-								</svg>
-							</a>
-						</li>
-						<li class="social-links__item social-links__item--margin-top">
-							<a class="social-links__link" href="http://facebook.com">
-								<span class="visually-hidden">Наш фейсбук</span>
-								<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<rect x="0.5" y="0.5" width="24" height="24" rx="3.5" stroke="white" />
-									<path
-										d="M15.6309 12.2H13.6667V20H10.75V12.2H9V9.8H10.75V8.35391C10.7523 6.24922 11.6022 5 14.013 5H16V7.4H14.667C13.7282 7.4 13.6667 7.76094 13.6667 8.43359V9.8H16L15.6309 12.2Z"
-										fill="white"
-									/>
-								</svg>
-							</a>
-						</li>
-						<li class="social-links__item social-links__item--margin-top">
-							<a class="social-links__link" href="http://whatsapp.com">
-								<span class="visually-hidden">Наш ватсап</span>
-								<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										fill-rule="evenodd"
-										clip-rule="evenodd"
-										d="M11.7322 7.12214C11.6131 6.55018 11.3828 6.49535 11.1737 6.44729C11.0033 6.40663 10.8072 6.36917 10.6111 6.33171C10.4175 6.29472 10.083 6.31198 9.75349 6.5791C9.42204 6.84315 8.51536 7.46535 8.21717 9.02627C7.91947 10.5846 8.68664 12.2949 8.79149 12.5341C8.89926 12.7711 10.1561 16.4364 12.9003 18.2782C15.1824 19.8072 15.7282 19.695 16.2755 19.7455C16.8258 19.7938 18.1626 19.3105 18.5487 18.6159C18.9343 17.9239 19.0554 17.2897 19.0082 17.1427C18.9611 16.9957 18.7799 16.8799 18.515 16.6643C18.2526 16.4491 16.9536 15.4082 16.7029 15.2494C16.4541 15.0937 16.2681 15.004 16.0116 15.2824C15.7552 15.5608 15.0546 16.1682 14.8423 16.3468C14.6301 16.5254 14.4557 16.5191 14.1903 16.3061C13.9278 16.0909 13.0451 15.576 12.1284 14.2808C11.4151 13.2734 11.0225 12.1243 10.9114 11.773C10.7999 11.4243 10.9853 11.2812 11.1634 11.1502C11.3235 11.0347 11.5295 10.8359 11.7126 10.6788C11.8932 10.5212 11.9666 10.4 12.1062 10.2075C12.2434 10.0146 12.2304 9.82001 12.1882 9.64691C12.146 9.47381 11.8739 7.79854 11.7322 7.12214Z"
-										fill="white"
-									/>
-									<path
-										d="M3.89061 21.2727L4.36495 21.4308L4.453 21.1666L4.2748 20.9527L3.89061 21.2727ZM2.38889 25.7778L1.91455 25.6197L1.63529 26.4575L2.49735 26.2659L2.38889 25.7778ZM8.03513 24.5231L8.25401 24.0736L8.09706 23.9972L7.92667 24.035L8.03513 24.5231ZM25.5 13.2778C25.5 19.9052 20.1274 25.2778 13.5 25.2778V26.2778C20.6797 26.2778 26.5 20.4575 26.5 13.2778H25.5ZM13.5 1.27783C20.1274 1.27783 25.5 6.65042 25.5 13.2778H26.5C26.5 6.09813 20.6797 0.277832 13.5 0.277832V1.27783ZM1.5 13.2778C1.5 6.65042 6.87258 1.27783 13.5 1.27783V0.277832C6.3203 0.277832 0.5 6.09813 0.5 13.2778H1.5ZM4.2748 20.9527C2.54195 18.8722 1.5 16.1973 1.5 13.2778H0.5C0.5 16.4397 1.62947 19.3391 3.50641 21.5927L4.2748 20.9527ZM2.86323 25.9359L4.36495 21.4308L3.41627 21.1146L1.91455 25.6197L2.86323 25.9359ZM7.92667 24.035L2.28042 25.2897L2.49735 26.2659L8.1436 25.0112L7.92667 24.035ZM13.5 25.2778C11.6178 25.2778 9.8382 24.8449 8.25401 24.0736L7.81626 24.9727C9.53385 25.8089 11.4629 26.2778 13.5 26.2778V25.2778Z"
-										fill="white"
-									/>
-								</svg>
-							</a>
-						</li>
-						<li class="social-links__item social-links__item--margin-top">
-							<a class="social-links__link" href="http://vk.com">
-								<span class="visually-hidden">Наш ВК</span>
-								<svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<rect x="0.5" y="1.1665" width="24" height="24" rx="3.5" stroke="white" />
-									<path
-										d="M18.3482 15.2148C19.5548 16.3842 19.8061 16.956 19.8468 17.0263C20.3449 17.8934 19.2945 17.9614 19.2945 17.9614L17.2819 17.9918C17.2819 17.9918 16.8472 18.0809 16.279 17.6708C15.5252 17.1318 14.4951 15.7257 13.9427 15.9085C13.3813 16.0936 13.5602 17.5677 13.5602 17.5677C13.5602 17.5677 13.5647 17.7481 13.4379 17.8934C13.2975 18.0457 13.0259 17.9871 13.0259 17.9871H12.4463C12.4463 17.9871 10.298 17.9965 8.54574 16.089C6.63733 14.0103 5.04132 10.1225 5.04132 10.1225C5.04132 10.1225 4.94398 9.87645 5.04811 9.74522C5.1681 9.59758 5.49182 9.59992 5.49182 9.59992H7.64474C7.64474 9.59992 7.84622 9.62805 7.9911 9.74053C8.11335 9.83193 8.179 10.0053 8.179 10.0053C8.179 10.0053 8.43934 10.7295 8.90117 11.5637C9.79991 13.1901 10.2187 13.5463 10.5243 13.3705C10.9681 13.1151 10.8345 11.0716 10.8345 11.0716C10.8345 11.0716 10.8435 10.3287 10.6104 9.99831C10.4293 9.74053 10.0919 9.66554 9.94253 9.64445C9.82029 9.63039 10.0195 9.33511 10.2776 9.20388C10.6647 9.00703 11.3506 8.99297 12.1588 9.00234C12.7882 9.00937 13.0259 9 13.0259 9C13.7684 9.18748 13.5171 9.91395 13.5171 11.6481C13.5171 12.2058 13.4198 12.9886 13.8046 13.2463C13.9699 13.3612 14.563 13.3776 15.5704 11.5848C16.0504 10.7342 16.4284 9.93504 16.4284 9.93504C16.4284 9.93504 16.5099 9.75459 16.6299 9.6796C16.7567 9.59992 16.9242 9.59992 16.9242 9.59992L19.1903 9.61164C19.1903 9.61164 19.8717 9.52259 19.9804 9.84599C20.0959 10.1834 19.702 10.774 18.7783 12.0652C17.257 14.1861 17.0872 13.9892 18.3482 15.2148Z"
-										fill="white"
-									/>
-								</svg>
-							</a>
-						</li>
-					</ul>
-					<a class="scroll-down" href="#services">
-						<span class="visually-hidden">Скролл вниз</span>
-						<svg width="38" height="56" viewBox="0 0 38 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<rect x="1.20913" y="0.35" width="35.5817" height="55.3" rx="17.7908" fill="#240000" fill-opacity="0.3" stroke="white" stroke-width="0.7" />
-							<path d="M19 9.4649L19 18.9297" stroke="white" stroke-width="0.7" />
-						</svg>
-					</a>
-					<span class="watch-catalog">смотреть каталог</span>
+			<section class="promo mx-auto">
+				<div class="container-fluid d-flex flex-column align-items-center">
+					<h2 class="promo__title display-1">Флористика с душой</h2>
+					<a class="promo__link" href="#compositions">Смотреть работы</a>
+					<div class="promo__wrapper">
+						<ul class="social-links">
+							<li class="social-links__item social-links__item--margin-top">
+								<a class="social-links__link" href="http://instagram.com">
+									<span class="visually-hidden">Наш инстаграм</span>
+									<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect x="0.5" y="0.5" width="24" height="24" rx="3.5" stroke="white" />
+										<circle cx="12.5" cy="12.5" r="5" stroke="white" />
+										<circle cx="19.5" cy="5.5" r="1.5" fill="white" />
+									</svg>
+								</a>
+							</li>
+							<li class="social-links__item social-links__item--margin-top">
+								<a class="social-links__link" href="http://facebook.com">
+									<span class="visually-hidden">Наш фейсбук</span>
+									<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect x="0.5" y="0.5" width="24" height="24" rx="3.5" stroke="white" />
+										<path
+											d="M15.6309 12.2H13.6667V20H10.75V12.2H9V9.8H10.75V8.35391C10.7523 6.24922 11.6022 5 14.013 5H16V7.4H14.667C13.7282 7.4 13.6667 7.76094 13.6667 8.43359V9.8H16L15.6309 12.2Z"
+											fill="white"
+										/>
+									</svg>
+								</a>
+							</li>
+							<li class="social-links__item social-links__item--margin-top">
+								<a class="social-links__link" href="http://whatsapp.com">
+									<span class="visually-hidden">Наш ватсап</span>
+									<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M11.7322 7.12214C11.6131 6.55018 11.3828 6.49535 11.1737 6.44729C11.0033 6.40663 10.8072 6.36917 10.6111 6.33171C10.4175 6.29472 10.083 6.31198 9.75349 6.5791C9.42204 6.84315 8.51536 7.46535 8.21717 9.02627C7.91947 10.5846 8.68664 12.2949 8.79149 12.5341C8.89926 12.7711 10.1561 16.4364 12.9003 18.2782C15.1824 19.8072 15.7282 19.695 16.2755 19.7455C16.8258 19.7938 18.1626 19.3105 18.5487 18.6159C18.9343 17.9239 19.0554 17.2897 19.0082 17.1427C18.9611 16.9957 18.7799 16.8799 18.515 16.6643C18.2526 16.4491 16.9536 15.4082 16.7029 15.2494C16.4541 15.0937 16.2681 15.004 16.0116 15.2824C15.7552 15.5608 15.0546 16.1682 14.8423 16.3468C14.6301 16.5254 14.4557 16.5191 14.1903 16.3061C13.9278 16.0909 13.0451 15.576 12.1284 14.2808C11.4151 13.2734 11.0225 12.1243 10.9114 11.773C10.7999 11.4243 10.9853 11.2812 11.1634 11.1502C11.3235 11.0347 11.5295 10.8359 11.7126 10.6788C11.8932 10.5212 11.9666 10.4 12.1062 10.2075C12.2434 10.0146 12.2304 9.82001 12.1882 9.64691C12.146 9.47381 11.8739 7.79854 11.7322 7.12214Z"
+											fill="white"
+										/>
+										<path
+											d="M3.89061 21.2727L4.36495 21.4308L4.453 21.1666L4.2748 20.9527L3.89061 21.2727ZM2.38889 25.7778L1.91455 25.6197L1.63529 26.4575L2.49735 26.2659L2.38889 25.7778ZM8.03513 24.5231L8.25401 24.0736L8.09706 23.9972L7.92667 24.035L8.03513 24.5231ZM25.5 13.2778C25.5 19.9052 20.1274 25.2778 13.5 25.2778V26.2778C20.6797 26.2778 26.5 20.4575 26.5 13.2778H25.5ZM13.5 1.27783C20.1274 1.27783 25.5 6.65042 25.5 13.2778H26.5C26.5 6.09813 20.6797 0.277832 13.5 0.277832V1.27783ZM1.5 13.2778C1.5 6.65042 6.87258 1.27783 13.5 1.27783V0.277832C6.3203 0.277832 0.5 6.09813 0.5 13.2778H1.5ZM4.2748 20.9527C2.54195 18.8722 1.5 16.1973 1.5 13.2778H0.5C0.5 16.4397 1.62947 19.3391 3.50641 21.5927L4.2748 20.9527ZM2.86323 25.9359L4.36495 21.4308L3.41627 21.1146L1.91455 25.6197L2.86323 25.9359ZM7.92667 24.035L2.28042 25.2897L2.49735 26.2659L8.1436 25.0112L7.92667 24.035ZM13.5 25.2778C11.6178 25.2778 9.8382 24.8449 8.25401 24.0736L7.81626 24.9727C9.53385 25.8089 11.4629 26.2778 13.5 26.2778V25.2778Z"
+											fill="white"
+										/>
+									</svg>
+								</a>
+							</li>
+							<li class="social-links__item social-links__item--margin-top">
+								<a class="social-links__link" href="http://vk.com">
+									<span class="visually-hidden">Наш ВК</span>
+									<svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect x="0.5" y="1.1665" width="24" height="24" rx="3.5" stroke="white" />
+										<path
+											d="M18.3482 15.2148C19.5548 16.3842 19.8061 16.956 19.8468 17.0263C20.3449 17.8934 19.2945 17.9614 19.2945 17.9614L17.2819 17.9918C17.2819 17.9918 16.8472 18.0809 16.279 17.6708C15.5252 17.1318 14.4951 15.7257 13.9427 15.9085C13.3813 16.0936 13.5602 17.5677 13.5602 17.5677C13.5602 17.5677 13.5647 17.7481 13.4379 17.8934C13.2975 18.0457 13.0259 17.9871 13.0259 17.9871H12.4463C12.4463 17.9871 10.298 17.9965 8.54574 16.089C6.63733 14.0103 5.04132 10.1225 5.04132 10.1225C5.04132 10.1225 4.94398 9.87645 5.04811 9.74522C5.1681 9.59758 5.49182 9.59992 5.49182 9.59992H7.64474C7.64474 9.59992 7.84622 9.62805 7.9911 9.74053C8.11335 9.83193 8.179 10.0053 8.179 10.0053C8.179 10.0053 8.43934 10.7295 8.90117 11.5637C9.79991 13.1901 10.2187 13.5463 10.5243 13.3705C10.9681 13.1151 10.8345 11.0716 10.8345 11.0716C10.8345 11.0716 10.8435 10.3287 10.6104 9.99831C10.4293 9.74053 10.0919 9.66554 9.94253 9.64445C9.82029 9.63039 10.0195 9.33511 10.2776 9.20388C10.6647 9.00703 11.3506 8.99297 12.1588 9.00234C12.7882 9.00937 13.0259 9 13.0259 9C13.7684 9.18748 13.5171 9.91395 13.5171 11.6481C13.5171 12.2058 13.4198 12.9886 13.8046 13.2463C13.9699 13.3612 14.563 13.3776 15.5704 11.5848C16.0504 10.7342 16.4284 9.93504 16.4284 9.93504C16.4284 9.93504 16.5099 9.75459 16.6299 9.6796C16.7567 9.59992 16.9242 9.59992 16.9242 9.59992L19.1903 9.61164C19.1903 9.61164 19.8717 9.52259 19.9804 9.84599C20.0959 10.1834 19.702 10.774 18.7783 12.0652C17.257 14.1861 17.0872 13.9892 18.3482 15.2148Z"
+											fill="white"
+										/>
+									</svg>
+								</a>
+							</li>
+						</ul>
+						<a class="scroll-down" href="#services">
+							<span class="visually-hidden">Скролл вниз</span>
+							<svg width="38" height="56" viewBox="0 0 38 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect
+									x="1.20913"
+									y="0.35"
+									width="35.5817"
+									height="55.3"
+									rx="17.7908"
+									fill="#240000"
+									fill-opacity="0.3"
+									stroke="white"
+									stroke-width="0.7"
+								/>
+								<path d="M19 9.4649L19 18.9297" stroke="white" stroke-width="0.7" />
+							</svg>
+						</a>
+						<span class="watch-catalog">смотреть каталог</span>
+					</div>
 				</div>
 			</section>
+
 			<!-- Каталог услуг -->
-			<section class="services" id="services">
+			<section class="services mx-auto" id="services">
 				<h2 class="services__title">Каталог услуг</h2>
-				<ul class="services__list">
-					<li class="services__list-item">
+				<div class="services__list container-fluid d-grid align-items-start gap-3">
+					<div class="services__list-item medium mx-auto">
 						<span class="services__number">01</span>
-						<img src="img/img-1.jpg" width="330" height="223" alt="Цветы" />
+						<img class="img-fluid" src="img/img-1.jpg" width="330" height="223" alt="Цветы" />
 						<p class="services__description">Букет невесты и свадебное оформление</p>
 						<a class="services__link" href="#">Смотреть</a>
-					</li>
-					<li class="services__list-item">
+					</div>
+					<div class="services__list-item extra-large mx-auto">
 						<span class="services__number">02</span>
 						<img src="img/img-2.jpg" width="330" height="610" alt="Цветы" />
 						<p class="services__description">Букеты на торжества</p>
 						<a class="services__link" href="#">Смотреть</a>
-					</li>
-					<li class="services__list-item">
+					</div>
+					<div class="services__list-item large mx-auto">
 						<span class="services__number">03</span>
 						<img src="img/img-3.jpg" width="330" height="370" alt="Цветы" />
 						<p class="services__description">Композиции</p>
 						<a class="services__link" href="#">Смотреть</a>
-					</li>
-					<li class="services__list-item">
+					</div>
+					<div class="services__list-item small mx-auto">
 						<span class="services__number">04</span>
 						<img src="img/img-4.jpg" width="330" height="146" alt="Цветы" />
 						<p class="services__description">Оформление мероприятий</p>
 						<a class="services__link" href="#">Смотреть</a>
-					</li>
-					<li class="services__list-item">
+					</div>
+					<div class="services__list-item medium mx-auto">
 						<span class="services__number">05</span>
 						<img src="img/img-5.jpg" width="330" height="245" alt="Цветы" />
 						<p class="services__description">Доставка цветов</p>
 						<a class="services__link" href="#">Смотреть</a>
-					</li>
-					<li class="services__list-item">
+					</div>
+					<div class="services__list-item small mx-auto">
 						<span class="services__number">06</span>
 						<img src="img/img-6.jpg" width="330" height="146" alt="Цветы" />
 						<p class="services__description">Упаковка и аксуссуары</p>
 						<a class="services__link" href="#">Смотреть</a>
-					</li>
-					<li class="services__list-item">
+					</div>
+					<div class="services__list-item small mx-auto">
 						<span class="services__number">07</span>
 						<img src="img/img-7.jpg" width="330" height="146" alt="Цветы" />
 						<p class="services__description">Фотосессии в нашей оранжерее</p>
 						<a class="services__link" href="#">Смотреть</a>
-					</li>
-					<li class="services__list-item">
+					</div>
+					<div class="services__list-item large mx-auto">
 						<span class="services__number">08</span>
 						<img src="img/img-8.jpg" width="330" height="370" alt="Цветы" />
 						<p class="services__description">Курсы по флористике</p>
 						<a class="services__link" href="#">Смотреть</a>
-					</li>
-				</ul>
-			</section>
-			<!-- Предложения -->
-			<section class="offer" id="offer">
-				<div class="offer__wrapper">
-					<h2 class="offer__title">Акционные предложения</h2>
-					<p class="offer__description">При заказе свадебного предоставляется скидка на букет невесты и бутоньерку в размере 30%</p>
-					<a href="#" class="offer__link">Заказать оформление</a>
+					</div>
 				</div>
-				<p class="offer__img">
-					<img src="img/plates.jpg" width="697" height="410" alt="Тарелки и цветы" />
-				</p>
 			</section>
+
+			<!-- Предложения -->
+			<section class="offer mx-auto row" id="offer">
+				<div class="col-lg-4 ps-4 ps-xl-0">
+					<h2 class="offer__title text-uppercase display-5">Акционные предложения</h2>
+					<p class="offer__description">При заказе свадебного предоставляется скидка на букет невесты и бутоньерку в размере 30%</p>
+					<a href="#" class="offer__link d-inline-block">Заказать оформление</a>
+				</div>
+				<div class="col-lg-7 ps-4 ps-lg-0 pt-5 pt-xl-0 ms-auto">
+					<img class="img-fluid" src="img/plates.jpg" width="697" height="410" alt="Тарелки и цветы" />
+				</div>
+			</section>
+
 			<!-- Композиции -->
-			<section class="compositions" id="compositions">
-				<div class="compositions__wrapper">
-					<h2 class="compositions__title">Композиции и шляпные коробки</h2>
+			<section class="compositions mx-auto ps-4 row" id="compositions">
+				<div class="col-xl-4 pb-5">
+					<h2 class="compositions__title display-5">Композиции и шляпные коробки</h2>
 					<p class="compositions__description">
 						Композиции могут собираться в любой таре: корзинке, шляпной коробке, вазочке или декоративных ящиках. Их нет необходимости ставить в вазу, как
 						букеты, потому что цветы питаются при помощи специальной флористической губки под названием оазис.<br />
 						Композиции очень удобные для подарка, или оформления мероприятия.
 					</p>
 					<a href="#" class="compositions__link">Заказать</a>
-					<p class="compositions__previews">
-						<button class="compositions__img-preview" type="button">
-							<img src="img/basket-1.jpg" width="123" height="123" alt="Корзина с цветами" />
-						</button>
-						<button class="compositions__img-preview" type="button">
-							<img src="img/basket-2.jpg" width="123" height="123" alt="Корзина с цветами" />
-						</button>
-						<button class="compositions__img-preview" type="button">
-							<img src="img/basket-3.jpg" width="123" height="123" alt="Корзина с цветами" />
-						</button>
-						<button class="compositions__img-preview" type="button">
-							<img src="img/basket-4.jpg" width="123" height="123" alt="Корзина с цветами" />
-						</button>
-					</p>
 				</div>
-				<p class="compositions__img-big">
-					<img class="img-big" src="img/basket-1.jpg" width="1000" height="855" alt="Корзина с цветами" />
-				</p>
-			</section>
-			<!-- Подарочные карты -->
-			<section class="gift-cards" id="gift-cards">
-				<h2 class="gift-cards__title">Подарочные карты</h2>
-				<ul class="gift-cards__list">
-					<li class="gift-cards__card card">
-						<div class="card__top">
-							<span class="card__number">328572915</span>
-							<span class="card__price">3 000</span>
+				<div class="col-xl-8">
+					<div id="carIndicators" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#carIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							<button type="button" data-bs-target="#carIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
 						</div>
-						<div class="card__bottom">
+						<div class="carousel-inner">
+							<div class="carousel-item active" data-bs-interval="8000">
+								<img src="img/basket-1.jpg" class="d-block w-100" alt="Корзина с цветами" />
+							</div>
+							<div class="carousel-item" data-bs-interval="8000">
+								<img src="img/basket-2.jpg" class="d-block w-100" alt="Корзина с цветами" />
+							</div>
+							<div class="carousel-item" data-bs-interval="8000">
+								<img src="img/basket-3.jpg" class="d-block w-100" alt="Корзина с цветами" />
+							</div>
+							<div class="carousel-item" data-bs-interval="8000">
+								<img src="img/basket-4.jpg" class="d-block w-100" alt="Корзина с цветами" />
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carIndicators" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Предыдущий</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carIndicators" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Следующий</span>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- Подарочные карты -->
+			<section class="gift-cards mx-auto" id="gift-cards">
+				<h2 class="gift-cards__title text-center text-uppercase">Подарочные карты</h2>
+				<ul class="mx-auto list-unstyled row gap-4 align-items-center">
+					<li class="p-0 col-12 col-lg">
+						<div class="card__top mx-auto d-flex flex-column">
+							<span class="align-self-end fs-5 font-monospace">328572915</span>
+							<span class="mt-auto fs-5 font-monospace">3 000</span>
+						</div>
+						<div class="card__bottom mx-auto d-flex flex-column justify-content-around align-items-center">
 							<p class="card__description">Порадуйте своих близких подарочной картой на 3 000 рублей</p>
 							<a href="" class="card__link">Получить</a>
 						</div>
 					</li>
-					<li class="gift-cards__card card">
-						<div class="card__top card__top--big">
-							<span class="card__number">368236061</span>
-							<span class="card__price">10 000</span>
+					<li class="p-0 col-12 col-lg">
+						<div class="card__top mx-auto card__top--big d-flex flex-column">
+							<span class="align-self-end fs-5 font-monospace">368236061</span>
+							<span class="mt-auto fs-5 font-monospace">10 000</span>
 						</div>
-						<div class="card__bottom card__bottom--big">
+						<div class="card__bottom mx-auto card__bottom--big d-flex flex-column justify-content-around align-items-center">
 							<p class="card__description">Порадуйте своих близких подарочной картой на 10 000 рублей</p>
 							<a href="" class="card__link">Получить</a>
 						</div>
 					</li>
-					<li class="gift-cards__card card">
-						<div class="card__top">
-							<span class="card__number">374678982</span>
-							<span class="card__price">6 000</span>
+					<li class="p-0 col-12 col-lg">
+						<div class="card__top mx-auto d-flex flex-column">
+							<span class="align-self-end fs-5 font-monospace">374678982</span>
+							<span class="mt-auto fs-5 font-monospace">6 000</span>
 						</div>
-						<div class="card__bottom">
+						<div class="card__bottom mx-auto d-flex flex-column justify-content-around align-items-center">
 							<p class="card__description">Порадуйте своих близких подарочной картой на 6 000 рублей</p>
 							<a href="" class="card__link">Получить</a>
 						</div>
 					</li>
 				</ul>
 			</section>
+
 			<!-- Партнеры -->
-			<section class="partners" id="partners">
-				<h2 class="partners__title">Наши партнёры</h2>
-				<div class="partners__wrapper">
-					<img src="img/provider-1.jpg" width="370" height="122" alt="Партнер Гладиолус" />
-					<img src="img/provider-2.jpg" width="370" height="122" alt="Партнер Гладиолус" />
-					<img src="img/provider-3.jpg" width="370" height="122" alt="Партнер Гладиолус" />
-					<img src="img/provider-4.jpg" width="571" height="190" alt="Партнер Гладиолус" />
-					<img src="img/provider-5.jpg" width="571" height="190" alt="Партнер Гладиолус" />
-					<img src="img/provider-6.jpg" width="268" height="90" alt="Партнер Гладиолус" />
-					<img src="img/provider-7.jpg" width="268" height="90" alt="Партнер Гладиолус" />
-					<img src="img/provider-8.jpg" width="268" height="90" alt="Партнер Гладиолус" />
-					<img src="img/provider-9.jpg" width="268" height="90" alt="Партнер Гладиолус" />
+			<section class="partners mx-auto" id="partners">
+				<h2 class="partners__title text-center text-uppercase">Наши партнёры</h2>
+				<div class="container-fluid">
+					<div class="d-flex flex-wrap justify-content-center gap-4 mb-4">
+						<img src="img/provider-1.jpg" width="370" height="122" alt="Партнер Гладиолус" />
+						<img src="img/provider-2.jpg" width="370" height="122" alt="Партнер Гладиолус" />
+						<img src="img/provider-3.jpg" width="370" height="122" alt="Партнер Гладиолус" />
+					</div>
+					<div class="d-flex flex-wrap justify-content-center gap-4 mb-4">
+						<img src="img/provider-4.jpg" width="571" height="190" alt="Партнер Гладиолус" />
+						<img src="img/provider-5.jpg" width="571" height="190" alt="Партнер Гладиолус" />
+					</div>
+					<div class="d-flex flex-wrap justify-content-center gap-4">
+						<img src="img/provider-6.jpg" width="268" height="90" alt="Партнер Гладиолус" />
+						<img src="img/provider-7.jpg" width="268" height="90" alt="Партнер Гладиолус" />
+						<img src="img/provider-8.jpg" width="268" height="90" alt="Партнер Гладиолус" />
+						<img src="img/provider-9.jpg" width="268" height="90" alt="Партнер Гладиолус" />
+					</div>
 				</div>
 			</section>
 		</main>
 		<!-- Подвал сайта -->
 		<footer class="main-footer">
-			<ul class="main-footer__list">
+			<ul class="main-footer__list d-flex justify-content-center flex-wrap">
 				<li class="main-footer__list-item"><a class="main-footer__link" href="#">Свадебная флористика</a></li>
 				<li class="main-footer__list-item"><a class="main-footer__link" href="#">Букеты на любые мероприятия</a></li>
 				<li class="main-footer__list-item"><a class="main-footer__link" href="#">Букеты невесты</a></li>
@@ -314,6 +370,7 @@
 				</li>
 			</ul>
 		</footer>
-		<script src="script.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
