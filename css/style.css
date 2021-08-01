@@ -6,9 +6,7 @@ html {
 }
 
 body {
-	max-width: 1730px;
 	min-width: 420px;
-	margin: 0 auto;
 	padding: 0;
 	font-family: "Forum", "Times New Roman", serif;
 	font-style: normal;
@@ -35,6 +33,7 @@ a {
 ---------*/
 
 .main-header {
+	max-width: 1200px;
 	padding-top: 113px;
 }
 
@@ -84,6 +83,7 @@ a {
 Промоблок
 -------*/
 .promo {
+	max-width: 1200px;
 	padding: 172px 0 220px 0;
 }
 
@@ -161,6 +161,7 @@ a {
   Каталог услуг
 -------------*/
 .services {
+	max-width: 1200px;
 	padding: 66px 0;
 }
 
@@ -280,7 +281,7 @@ a {
 Предложения
 ---------*/
 .offer {
-	max-width: 1176px;
+	max-width: 1200px;
 	padding: 143px 0;
 }
 
@@ -334,6 +335,7 @@ a {
 Композиции
 --------*/
 .compositions {
+	max-width: 1200px;
 	padding: 127px 0 118px;
 }
 
@@ -391,7 +393,7 @@ a {
 Подарочные карты
 --------------*/
 .gift-cards {
-	max-width: 1176px;
+	max-width: 1200px;
 	padding: 128px 0 163px;
 }
 
@@ -401,7 +403,6 @@ a {
 	font-size: 30px;
 	line-height: 33px;
 	letter-spacing: 0.06em;
-	color: #ffffff;
 }
 
 .gift-cards__title::after {
@@ -481,14 +482,12 @@ a {
 .card__link:focus {
 	outline: rgba(255, 255, 255, 0.8) solid 1px;
 }
-/*
+
 /* ------
  Партнёры
--------*
+-------*/
 .partners {
-	/* min-height: 900px; *
-	max-width: 1176px;
-	margin: 0 auto;
+	max-width: 1200px;
 	padding: 108px 0 166px;
 }
 
@@ -498,9 +497,6 @@ a {
 	font-size: 30px;
 	line-height: 33px;
 	letter-spacing: 0.06em;
-	text-transform: uppercase;
-	text-align: center;
-	color: #ffffff;
 }
 
 .partners__title::after {
@@ -513,20 +509,10 @@ a {
 	background-color: #fff;
 }
 
-.partners__wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	margin-right: -33px;
-}
 
-.partners__wrapper img {
-	margin-right: 33px;
-	margin-bottom: 33px;
-	flex-grow: 1;
-}
 /* ----------
 Главный футер
------------*
+-----------*/
 .main-footer {
 	min-height: 160px;
 	padding-top: 21px;
@@ -534,8 +520,6 @@ a {
 }
 
 .main-footer__list {
-	display: flex;
-	justify-content: center;
 	margin: 0 -50px 30px 0;
 	padding: 0;
 	list-style: none;
